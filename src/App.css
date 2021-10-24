@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(95,86,200,1) 100%, rgba(0,212,255,1) 100%);
+  color: white;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.header-h1 {
+  margin-right: 3rem;
+}
+.navbar .link {
+  font-size: 1.2rem;
+  margin: 1.2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* OMDb Page */
+.Omdb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.Omdb .header {
+  width: 100%;
+  padding: 2rem;
+}
+
+
+.Omdb .search {
+  margin: 1rem 0 1rem 0;
+}
+
+.search-field {
+  width: 40vw;
+  padding: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.rating {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.Omdb .container-card {
+  box-shadow: -4px -1px 27px 0px rgba(0,0,0,0.75);
+  border-radius: 0.5rem;
+  background-color: #fff;
+  visibility: hidden;
+}
+
+.Omdb .active {
+  padding: 1rem;
+  visibility: visible;
+}
+.poster {
+  margin: 1rem;
+}
+
+.search-button {
+  padding: 1rem;
+  background-color: rgb(65, 90, 197);
+  box-shadow: 2px -1px 5px 0px rgba(0,0,0,0.75);
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .poster {
+    width: 80%;
   }
 }
+
